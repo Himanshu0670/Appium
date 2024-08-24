@@ -47,4 +47,13 @@ Download dummy apk files:
 - www.apkpure.com
 - www.apk4fun.com
 
+## Real Device Vs Simulator Vs Emulator Testing
 
+### Real Device Testing :-
+Testing performed on physical device i.e. your handset.Real device testing assures you that your application will work smoothly on customer handset.
+
+### Simulator & Emulator Testing :-
+Simulators & Emulators are not an actual devices. Simulators & Emulators are virtual devices. Virtual device are not real phones but they are software which gives functionalities as real phone (except few functionality like camera...)
+
+- **Android virtual device are `Emulator`**
+- **iOS virtual device are `Simulator`**
