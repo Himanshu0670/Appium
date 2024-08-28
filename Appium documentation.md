@@ -57,3 +57,19 @@ Simulators & Emulators are not an actual devices. Simulators & Emulators are vir
 
 - **Android virtual device are `Emulator`**
 - **iOS virtual device are `Simulator`**
+
+## How to find `appPackage` and `appActivity` in a app Real/Virtual device
+To find the `appPackage` and `appActivity` in a app Real/Virtual devices using adb (Android Debug Bridge) on Windows, follow these steps:
+
+1. Open command prompt & type:
+`adb devices`
+This should list your virtual device. If it’s not listed, ensure the emulator is running and try again.
+
+2. To open shell type:
+`adb shell`
+
+3. Open the app make that in focus
+  
+4. To get `appPackage` and `appActivity` of focus device type:
+`dumpsys window displays | grep -e 'mCurrentFocus'`
+   
