@@ -3,18 +3,18 @@
 ### Mobile Web App :- 
 Web apps rely on web browsers as their user interface. They need the internet to perform tasks. The best
 thing about web apps is that they can run on various devices like computers, phones, and tablets. Additionally,
-they can adjust to the screen size, whether a desktop computer or a smartphone.
-                                    I
+they can adjust to the screen size.
+                                    
 ### Native App :-
-They are more customized apps that are dedicated to specific operating systems. For example, if an app is
-made for Android, it's all run only in Android devices. The same rule applies to iOS - it's exclusively for Apple's
-iPhones and iPads.
+A native app is developed specifically for one platform.It can be installed through an application store(such as Google play store or Apple app store)
+Example: WhatsApp, Facebook These app can be use all the system application's(the app which comes by default with your mobile). 
 
 ### Hybrid App :-
 Hybrid apps combine elements from the web and native apps. They are built using a wide range of front-end
 technologies. In other words, developers don't have to maintain or create a separate code base for Android
 and iOS, meaning that developers can write the mobile app code once and make it work on multiple
 platforms.
+Example: Gmail, Twitter, Instagram, WhatsApp, Facebook.
 
 ### What is Mobile Testing :-
 Mobile testing is the process by which applications for modern mobile devices are
@@ -57,6 +57,23 @@ Simulators & Emulators are not an actual devices. Simulators & Emulators are vir
 
 - **Android virtual device are `Emulator`**
 - **iOS virtual device are `Simulator`**
+
+## Why Appium(Advantages)
+- Cross platform: Android & iOS we can test native, hybrid & web app.
+- Allow you to communicate with other apps, Ex: WhatsApp, (Majority of tools doesn't support this).
+- No pre-compilation of your app.
+- Support for built in app: alarm, phone, calendar etc.
+- Any WebDriver compatible language is supported: java, obective C, Ruby,php, C#.
+
+## Limitations of Appium
+- For Android, no support for Android API level <17(for android v>4.1)if your mobile having less than 17 then we need to go for selendroid.
+- Script execution is very slow on iOS & Android virtual devices.
+- No support for toast messgage.
+- No parallel execution directly.
+
+# What is Appium
+Appium is an open-source test automation tool that allows developers and testers to automate tests for mobile applications. Appium is mobile web, native & hybrid software application test automation tool developed and supported by [Sauce Labs](https://saucelabs.com/). It is open-source automation tool which is useful to automate Android & iOS platform apps.
+
 
 ## How to find `appPackage` and `appActivity` in a app Real/Virtual device
 To find the `appPackage` and `appActivity` in a app Real/Virtual devices using adb (Android Debug Bridge) on Windows, follow these steps:
