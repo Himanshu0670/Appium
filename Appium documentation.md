@@ -74,6 +74,11 @@ Simulators & Emulators are not an actual devices. Simulators & Emulators are vir
 # What is Appium
 Appium is an open-source test automation tool that allows developers and testers to automate tests for mobile applications. Appium is mobile web, native & hybrid software application test automation tool developed and supported by [Sauce Labs](https://saucelabs.com/). It is open-source automation tool which is useful to automate Android & iOS platform apps.
 
+## How to open virtual device using command prompt:
+- Go to the follwing location: `C:\Users\himan\AppData\Local\Android\Sdk\emulator`
+- Open command prompt on above location
+- Run the following command: `emulator -avd devicename` ex `emulator -avd Pixel 6` 
+
 ## How to install apk on virtual device:
 
 ### Method 1 : Using Appium Inspector
