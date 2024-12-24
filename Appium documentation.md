@@ -74,7 +74,37 @@ Simulators & Emulators are not an actual devices. Simulators & Emulators are vir
 # What is Appium
 Appium is an open-source test automation tool that allows developers and testers to automate tests for mobile applications. Appium is mobile web, native & hybrid software application test automation tool developed and supported by [Sauce Labs](https://saucelabs.com/). It is open-source automation tool which is useful to automate Android & iOS platform apps.
 
+## How to install apk on virtual device:
 
+### Method 1 : Using Appium Inspector
+1. First open the Appium server.
+2. Open & run an virtual device on the Adnroid studio
+3. Open command prompt & type: `adb devices`, this should list your virtual device. If it’s not listed, ensure the emulator is running and try again.
+5. Open "Appium inspector"
+6. Set remote path on "Appium inspector" for v1.22.3 as: `/wd/hub`
+7. Set capabilities on "Appium inspector" as:
+ ```
+  {
+  "platformName": "Android",
+  "appium:automationName": "uiautomator2",
+  "appium:deviceName": "Pixel 6",
+  "appium:app": "path of the apk"
+}  
+ ```
+8. Start the session & check the apk is installled or not in your running virtual device.
+
+### Method 2 : Using Adb server("Android Debug Bridge" command line tool to communicate with your device) 
+1. Open command prompt
+2. Start server using command: `adb.exe start-server`
+3. Open & run an virtual device on the Adnroid studio
+4. If server is already started then to kill server: `adb.exe kill-server`
+5. Go to apk file folder, run the command: `adb.exe install filename.apk`
+
+### Method 3 : Drag & drop  
+1. Open & run an virtual device on the Adnroid studio
+2. Go to apk file folder 
+3. Drag & drop that apk file to virtual device
+-----
 ## How to find `appPackage` and `appActivity` in a app Real/Virtual device
 To find the `appPackage` and `appActivity` in a app Real/Virtual devices using adb (Android Debug Bridge) on Windows, follow these steps:
 
