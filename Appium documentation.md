@@ -110,8 +110,18 @@ Appium is an open-source test automation tool that allows developers and testers
 2. Go to apk file folder 
 3. Drag & drop that apk file to virtual device
 -----
+
+## What is appPackage & appActivity
+
+- appPackage - The package name of the app you want to inspect.
+- appActivity - The main activity of the app you want to inspect.This is used to start the app & bring it to the forground.
+
 ## How to find `appPackage` and `appActivity` in a app Real/Virtual device
-To find the `appPackage` and `appActivity` in a app Real/Virtual devices using adb (Android Debug Bridge) on Windows, follow these steps:
+
+There are two ways to find the `appPackage` and `appActivity` in a app Real/Virtual devices:-
+
+- **Real device only you can download & install `Apk info` named app.**
+- **Real/Virtual devices using adb (Android Debug Bridge) on Windows, follow these steps:**
 
 1. Open command prompt & type:
 `adb devices`
