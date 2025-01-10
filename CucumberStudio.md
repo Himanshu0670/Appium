@@ -123,3 +123,6 @@ CucumberStudio provides detailed execution reports:
 ### Conclusion
 CucumberStudio helps align teams on behavior-driven development by allowing collaboration, managing Gherkin-based specifications, and automating tests. By setting it up properly with integration into your automation framework and CI/CD pipeline, you can streamline the BDD process, gain clarity in project specifications, and automate the verification of those specifications.
 
+## Pricing 
+As per the pricing details on the [CucumberStudio website](https://smartbear.com/product/cucumberstudio/pricing/), the platform starts at $32 per month for a single user.This plan includes the **`Gherkin editor`, `test automation`, and `advanced living documentation` features such as feature history and digest. Additionally, it provides the ability to manage `3 projects` and includes `2 free read-only users`**. While these features are useful for teams practicing Behavior-Driven Development (BDD), the cost of $32 per month may be considered high, especially for smaller teams or organizations with limited resources. Cnsidering the pricing structure, CucumberStudio may be viewed as costly, especially for smaller teams or companies with budget constraints.
+
