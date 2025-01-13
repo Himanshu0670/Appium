@@ -2,30 +2,6 @@
 [CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) is a collaborative testing platform in the cloud that allows the software delivery team to co-design acceptance tests. It provides a real-time environment for designing, executing and refactoring tests. Ultimately CucumberStudio enables to automate tests that become the living specification of your Apps.
 CucumberStudio is intended to be used by everyone in a software delivery team: customers, domain experts, product managers, testers and developers.
 
-## Glossary
-
-Before you begin, here’s a quick rundown on all the major terms and concepts used by CucumberStudio:
-
-### Scenario
-A sequence of steps that represents one behavior of the application as expected by the user. A scenario may be either manual and/or automated.
-
-### Action word
-A sequence of steps that can be reused across multiple scenarios like a function. It defines the Domain Specific Language (DSL) of the project. It is the common language shared by the team and used as building blocks to create scenarios.
-
-### Datatable
-For a scenario with parameters, it is possible to define several sets of values, that is, a datatable. A test will be generated for each set of values.
-
-### Test
-If a scenario has no datatable, it will generate one test. If a scenario has a datatable with N sets of values, it will generate N tests. So basically, the scenario is a higher-level description of the behavior of the application. It generates one or more test instances that will be executed.
-
-### Test run
-A test run is a collection of tests you want to execute. For each test of a test run, you can add one or more test results to keep track of your test execution progress.
-
-### HipTest Publisher
-An open-source application that generates scripts for various test automation frameworks like RSpec, JUnit, TestNG, Robot Framework, Cucumber, and so on.
-
-----
-
 Below is a comprehensive guide on how to implement CucumberStudio in your project:
 
 ### 1. **Understanding CucumberStudio**
@@ -59,13 +35,40 @@ To implement CucumberStudio in your project, follow these steps:
 3. Define your **Feature** and **Scenarios** using Gherkin syntax. 
    Example:
    ```gherkin
-   Feature: User login functionality
-     Scenario: Valid user login
-       Given the user is on the login page
-       When the user enters valid credentials
-       Then the user should be logged in successfully
+   Feature: Automate calculator on real device
+     Scenario: Addition of two integer value
+      Given I have two integers 5 and 3
+      When I add the two integers
+      Then the result should be 8
    ```
-4. You can use **tags** to group scenarios, such as `@smoke` or `@regression`, to make them easier to manage and run.
+
+#### Step 5: **Create new test run**
+1. Go to Test runs tab on CucumberStudio
+2. Add new test run
+
+#### Step 6: **Export project**
+1. Go to Automation tab on CucumberStudio
+2. Export project in your preferred language in this following case we select `Cucumber/java`
+3. Unzip `project_export` folder
+
+#### Step 7: **Install hiptest publisher**
+
+##### What is hiptest-publisher: 
+`hiptest-publisher` is a command-line tool used to publish test results and feature files from a local machine to the Hiptest platform (now known as CucumberStudio after rebranding). Hiptest/CucumberStudio is a collaborative platform for Behavior-Driven Development (BDD) that helps teams write and manage test scenarios in Gherkin syntax.
+
+- Note: Before installing `hiptest-publisher` `ruby` should be installed to your system & path should be added.
+
+1. Open cmd & type `gem install hiptest-publisher`
+2. Check version `hiptest-publisher --version`
+
+#### Step 8: **Fetch test run**
+1. Now fetch the test run we created on **CucumberStudio**
+2. Open cmd & type `hiptest-publisher --config=hiptest-publisher.conf --without=actionwords --test-run-id=(id of the test run)`
+3. Id of the test run is found under Test runs tab on **CucumberStudio**
+4. Again run the same command with id you get from the previous command
+5. Now open the feature. file & copy all the scenarios
+6. Paste them in eclipse with  `.feature` extension
+
 
 #### Step 5: **Add Step Definitions**
 1. After writing feature files, you'll need to write step definitions that will link Gherkin steps to automation code (e.g., Selenium or Appium).
@@ -79,29 +82,6 @@ To run tests automatically, you'll need to integrate CucumberStudio with your te
    - Use the **CucumberStudio API** to programmatically upload and update feature files from your local repository.
    - Use tools like **Cucumber CLI**, **Maven**, or **Gradle** to automate tests and push test results to CucumberStudio.
    
-2. **Set up Cucumber Studio Integration** in your automation framework:
-   - **Maven/Gradle**: Add dependencies to the `pom.xml` (for Maven) or `build.gradle` (for Gradle).
-   - **JUnit, TestNG, or Cucumber-Java**: Include appropriate libraries.
-   - **Example Maven dependency** for Cucumber:
-     ```xml
-     <dependency>
-       <groupId>io.cucumber</groupId>
-       <artifactId>cucumber-java</artifactId>
-       <version>YOUR_VERSION</version>
-       <scope>test</scope>
-     </dependency>
-     ```
-
-3. **Configure CucumberStudio Report**:
-   - CucumberStudio allows you to push test results from your test execution back into the platform for detailed reporting.
-   - The platform integrates with CI tools like Jenkins, CircleCI, etc.
-
-#### Step 7: **Implementing CI/CD Integration**
-1. Use **Jenkins** or other CI/CD tools to automate the running of your BDD tests.
-2. **Jenkins** can be configured with the following steps:
-   - Install the **Cucumber Jenkins plugin**.
-   - Configure a pipeline job to pull feature files from CucumberStudio and trigger the execution of automated tests.
-   - Publish test results back to CucumberStudio for tracking.
 
 #### Step 8: **Collaborate with Stakeholders**
 1. With CucumberStudio, your product owners, developers, and testers can collaboratively:
