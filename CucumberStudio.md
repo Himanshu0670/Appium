@@ -1,6 +1,30 @@
-## What is CucumberStudio
+# What is CucumberStudio
 [CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) is a collaborative testing platform in the cloud that allows the software delivery team to co-design acceptance tests. It provides a real-time environment for designing, executing and refactoring tests. Ultimately CucumberStudio enables to automate tests that become the living specification of your Apps.
 CucumberStudio is intended to be used by everyone in a software delivery team: customers, domain experts, product managers, testers and developers.
+
+## Glossary
+
+Before you begin, here’s a quick rundown on all the major terms and concepts used by CucumberStudio:
+
+### Scenario
+A sequence of steps that represents one behavior of the application as expected by the user. A scenario may be either manual and/or automated.
+
+### Action word
+A sequence of steps that can be reused across multiple scenarios like a function. It defines the Domain Specific Language (DSL) of the project. It is the common language shared by the team and used as building blocks to create scenarios.
+
+### Datatable
+For a scenario with parameters, it is possible to define several sets of values, that is, a datatable. A test will be generated for each set of values.
+
+### Test
+If a scenario has no datatable, it will generate one test. If a scenario has a datatable with N sets of values, it will generate N tests. So basically, the scenario is a higher-level description of the behavior of the application. It generates one or more test instances that will be executed.
+
+### Test run
+A test run is a collection of tests you want to execute. For each test of a test run, you can add one or more test results to keep track of your test execution progress.
+
+### HipTest Publisher
+An open-source application that generates scripts for various test automation frameworks like RSpec, JUnit, TestNG, Robot Framework, Cucumber, and so on.
+
+----
 
 Below is a comprehensive guide on how to implement CucumberStudio in your project:
 
