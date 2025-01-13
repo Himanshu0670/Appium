@@ -1,5 +1,6 @@
 ## What is CucumberStudio
-[CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) (formerly known as CucumberPro) is a collaborative, web-based tool designed for Behavior-Driven Development (BDD) teams to manage and automate feature files, specifications, and acceptance tests. It helps teams create and manage Gherkin-based BDD specifications and integrate with CI/CD pipelines for test automation.
+[CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) is a collaborative testing platform in the cloud that allows the software delivery team to co-design acceptance tests. It provides a real-time environment for designing, executing and refactoring tests. Ultimately CucumberStudio enables to automate tests that become the living specification of your Apps.
+CucumberStudio is intended to be used by everyone in a software delivery team: customers, domain experts, product managers, testers and developers.
 
 Below is a comprehensive guide on how to implement CucumberStudio in your project:
 
