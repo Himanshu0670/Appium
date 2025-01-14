@@ -63,12 +63,12 @@ To implement CucumberStudio in your project, follow these steps:
 
 #### Step 8: **Fetch test run**
 1. Now fetch the test run we created on **CucumberStudio**
-2. Open cmd & type `hiptest-publisher --config=hiptest-publisher.conf --without=actionwords --test-run-id=(id of the test run)`
-3. Id of the test run is found under Test runs tab on **CucumberStudio**
-4. Again run the same command with id you get from the previous command
-5. Now open the feature. file & copy all the scenarios
-6. Paste them in eclipse with  `.feature` extension
-
+2. Open cmd & go to under `project _export`
+3. Then type `hiptest-publisher --config=hiptest-publisher.conf --without=actionwords --test-run-id=(id of the test run)`
+4. Id of the test run is found under Test runs tab on **CucumberStudio**
+5. Again run the same command with id you get from the previous command
+6. Now open the feature. file & copy all the scenarios
+7. Paste them in eclipse with  `.feature` extension
 
 #### Step 5: **Add Step Definitions**
 1. After writing feature files, you'll need to write step definitions that will link Gherkin steps to automation code (e.g., Selenium or Appium).
