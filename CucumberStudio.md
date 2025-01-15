@@ -11,6 +11,11 @@ CucumberStudio allows teams to work on Gherkin syntax (Given, When, Then) in a c
 - **Integrations**: Integrates seamlessly with automation tools and CI/CD pipelines.
 - **Reporting**: Provides test execution reports that visualize the success or failure of BDD scenarios.
 
+### 2. **Setup Eclipse**
+1. Download eclipse
+2. Setup a new project as `maven`
+3. Install cucumber plugin
+
 ### 2. **Setting Up CucumberStudio**
 To implement CucumberStudio in your project, follow these steps:
 
