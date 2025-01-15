@@ -75,6 +75,10 @@ To implement CucumberStudio in your project, follow these steps:
 6. Now open the feature. file & copy all the scenarios
 7. Paste them in eclipse with  `.feature` extension
 
+#### Step 9: **Push report to CucumberStudio**
+
+`hiptest-publisher --config-file=hiptest-publisher.conf --test-run-id=1032232 --push="report/*.html" --push_format="junit" --execution-environment="Default"`
+
 #### Step 5: **Add Step Definitions**
 1. After writing feature files, you'll need to write step definitions that will link Gherkin steps to automation code (e.g., Selenium or Appium).
 2. Define the step definitions in the language of your choice (e.g., Java, Ruby, JavaScript).
