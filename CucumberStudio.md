@@ -90,7 +90,11 @@ To implement CucumberStudio in your project, follow these steps:
 
 #### Step 9: **Push report to CucumberStudio**
 
-`hiptest-publisher --config-file=hiptest-publisher.conf --test-run-id=1032232 --push="report/*.html" --push_format="junit" --execution-environment="Default"`
+- First command: 
+`hiptest-publisher --config-file hiptest-publisher.conf --push "Automate_report/*.xml" --test-run-id 1032566 --push-format junit`
+
+- Alternate command:
+`hiptest-publisher --config-file=hiptest-publisher.conf --test-run-id=1032566 --push="Automate_report/*.xml" --push_format="junit" --execution-environment="Default"`
 
 #### Step 5: **Add Step Definitions**
 1. After writing feature files, you'll need to write step definitions that will link Gherkin steps to automation code (e.g., Selenium or Appium).
