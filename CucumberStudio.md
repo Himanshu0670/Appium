@@ -2,9 +2,15 @@
 [CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) is a collaborative testing platform in the cloud that allows the software delivery team to co-design acceptance tests. It provides a real-time environment for designing, executing and refactoring tests. Ultimately CucumberStudio enables to automate tests that become the living specification of your Apps.
 CucumberStudio is intended to be used by everyone in a software delivery team: customers, domain experts, product managers, testers and developers.
 
-Below is a comprehensive guide on how to implement CucumberStudio in your project:
+## Prerequisites
 
-## **Pros of CucumberStudio**
+- Download [Java](https://www.oracle.com/in/java/technologies/downloads/)
+- Download [Eclipse](https://www.eclipse.org/downloads/)
+- Add dependencies under [pom.xml](https://mvnrepository.com/)
+-  
+
+## _Pros of CucumberStudio_
+
 - **Collaboration**: Stakeholders, product owners, and developers can all work together on specifications.
 - **Gherkin Syntax Support**: CucumberStudio supports writing tests in Gherkin, a simple human-readable language for defining test cases and requirements.
 - **Version Control**: Tracks changes in feature files and provides version history.
@@ -13,7 +19,8 @@ Below is a comprehensive guide on how to implement CucumberStudio in your projec
 - **Integration with Other Tools**: CucumberStudio integrates with other tools such as Jira, Slack, GitHub, and GitLab, enhancing collaboration and workflow.
 - **Live Collaboration**: Real-time collaboration allows multiple team members to work on scenarios simultaneously, making it easier to write, review, and update test cases.
 
-## **Cons of CucumberStudio**
+## _Cons of CucumberStudio_
+
 - **Learning Curve for New Users**: For teams unfamiliar with Behavior-Driven Development (BDD), there may be a learning curve to effectively write Gherkin scenarios and understand the CucumberStudio workflow.Some users may find it challenging to set up automation or integrate it with other tools.
 - **Complex Setup for Users**: Configuring CucumberStudio can be complicated and require additional setup time for integrating with other systems or automating workflows.
 - **Compatibility issue**: There are high chances 
@@ -23,9 +30,10 @@ Below is a comprehensive guide on how to implement CucumberStudio in your projec
 - **Cloud-Based Dependency**: Since CucumberStudio is a cloud-based tool, teams may face issues related to internet connectivity, and there could be security concerns related to storing test cases in the cloud.
 
 
+Below is a comprehensive guide on how to implement CucumberStudio in your project:
 
 ### 2. **Setup Eclipse**
-1. Download eclipse
+1. Download **Eclipse**
 2. Setup a new project as `maven`
 3. Install cucumber plugin
 
