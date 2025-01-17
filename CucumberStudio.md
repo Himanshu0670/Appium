@@ -2,12 +2,13 @@
 [CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) is a collaborative testing platform in the cloud that allows the software delivery team to co-design acceptance tests. It provides a real-time environment for designing, executing and refactoring tests. Ultimately CucumberStudio enables to automate tests that become the living specification of your Apps.
 CucumberStudio is intended to be used by everyone in a software delivery team: customers, domain experts, product managers, testers and developers.
 
+
 ## Prerequisites
 
 - Download [Java](https://www.oracle.com/in/java/technologies/downloads/)
 - Download [Eclipse](https://www.eclipse.org/downloads/)
-- Add dependencies under [pom.xml](https://mvnrepository.com/)
--  
+- Download [Ruby](https://rubyinstaller.org/downloads/archives/) ,  there might be some compatibility issues in my case `2.6.0.1-x64`  works correctly.
+- Set up an account on [CucumberStudio](https://cucumber.io/tools/cucumberstudio).
 
 ## _Pros of CucumberStudio_
 
@@ -28,6 +29,7 @@ CucumberStudio is intended to be used by everyone in a software delivery team: c
 - **Dependency on Cucumber Framework**: CucumberStudio is tightly integrated with the Cucumber testing framework, which could limit its use for teams that don't already use or prefer another testing framework.
 - **Limited Non-Technical Stakeholder Support**: While Gherkin makes it accessible to non-technical stakeholders, they may still struggle with complex scenarios or issues if the scenarios are not well-written or maintained.
 - **Cloud-Based Dependency**: Since CucumberStudio is a cloud-based tool, teams may face issues related to internet connectivity, and there could be security concerns related to storing test cases in the cloud.
+
 
 
 Below is a comprehensive guide on how to implement CucumberStudio in your project:
