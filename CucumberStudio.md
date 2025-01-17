@@ -27,10 +27,7 @@ CucumberStudio is intended to be used by everyone in a software delivery team: c
 - **Compatibility issue**: There are high chances 
 - **Pricing**: CucumberStudio offers different pricing tiers, which can become expensive, especially for smaller teams or startups. The full range of features might be locked behind higher-tier plans.
 - **Dependency on Cucumber Framework**: CucumberStudio is tightly integrated with the Cucumber testing framework, which could limit its use for teams that don't already use or prefer another testing framework.
-- **Limited Non-Technical Stakeholder Support**: While Gherkin makes it accessible to non-technical stakeholders, they may still struggle with complex scenarios or issues if the scenarios are not well-written or maintained.
 - **Cloud-Based Dependency**: Since CucumberStudio is a cloud-based tool, teams may face issues related to internet connectivity, and there could be security concerns related to storing test cases in the cloud.
-
-
 
 Below is a comprehensive guide on how to implement CucumberStudio in your project:
 
