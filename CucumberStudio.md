@@ -20,7 +20,10 @@ CucumberStudio is intended to be used by everyone in a software delivery team: c
 ## _Cons of CucumberStudio_
 - **Learning Curve for New Users**: For teams unfamiliar with Behavior-Driven Development (BDD), there may be a learning curve to effectively write Gherkin scenarios and understand the CucumberStudio workflow.Some users may find it challenging to set up automation or integrate it with other tools.
 - **Complex Setup for Users**: Configuring CucumberStudio can be complicated and require additional setup time for integrating with other systems or automating workflows.
-- **Compatibility issue**: There are high chances 
+- **Compatibility issue**: There are compatibility issues faces while setup & execute the script.
+
+  e.g. - First, i installed the latest Ruby version [3.4.1-2 (x64)](https://rubyinstaller.org/downloads/) & try to extract the feature file from `cmd` won't able to do it but later on i installed the old [2.6.0_1 (x64)](https://rubyinstaller.org/downloads/) finally i am able to extract the feature file folder.
+
 - **Pricing**: CucumberStudio offers different pricing tiers, which can become expensive, especially for smaller teams or startups. The full range of features might be locked behind higher-tier plans.
 - **Dependency on Cucumber Framework**: CucumberStudio is tightly integrated with the Cucumber testing framework, which could limit its use for teams that don't already use or prefer another testing framework.
 - **Cloud-Based Dependency**: Since CucumberStudio is a cloud-based tool, teams may face issues related to internet connectivity, and there could be security concerns related to storing test cases in the cloud.
@@ -118,7 +121,8 @@ Add team members to the project. You can assign them different roles like:
 5. Your test status is updated automatically on CucumberStudio once you get the follwing output:
 
 ![image](https://github.com/user-attachments/assets/054bbe3b-c54a-4084-a172-617886fcf85e)
-![image](https://github.com/user-attachments/assets/bd756265-8723-4637-bb00-099ce3cc67e7)
+![image](https://github.com/user-attachments/assets/cf583126-f829-4678-b2ab-4d9ada033298)
+
 ----
 ## **Best Practices for Implementing CucumberStudio**
 
@@ -142,4 +146,3 @@ Add team members to the project. You can assign them different roles like:
 
 ## Pricing 
 As per the pricing details on the [CucumberStudio website](https://smartbear.com/product/cucumberstudio/pricing/), the platform starts at $32 per month for a single user.This plan includes the **`Gherkin editor`, `test automation`, and `advanced living documentation` features such as feature history and digest. Additionally, it provides the ability to manage `3 projects` and includes `2 free read-only users`**. While these features are useful for teams practicing Behavior-Driven Development (BDD), the cost of $32 per month may be considered high, especially for smaller teams or organizations with limited resources. Cnsidering the pricing structure, CucumberStudio may be viewed as costly, especially for smaller teams or companies with budget constraints.
-
