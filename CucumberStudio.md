@@ -2,12 +2,6 @@
 [CucumberStudio](https://support.smartbear.com/cucumberstudio/docs/index.html) is a collaborative testing platform in the cloud that allows the software delivery team to co-design acceptance tests. It provides a real-time environment for designing, executing and refactoring tests. Ultimately CucumberStudio enables to automate tests that become the living specification of your Apps.
 CucumberStudio is intended to be used by everyone in a software delivery team: customers, domain experts, product managers, testers and developers.
 
-## Prerequisites
-- Download [Java](https://www.oracle.com/in/java/technologies/downloads/)
-- Download [Eclipse](https://www.eclipse.org/downloads/)
-- Download [Ruby](https://rubyinstaller.org/downloads/archives/) ,  there might be some compatibility issues in my case `2.6.0.1-x64`  works correctly.
-- Set up an account on [CucumberStudio](https://cucumber.io/tools/cucumberstudio).
-
 ## _Pros of CucumberStudio_
 - **Collaboration**: Stakeholders, product owners, and developers can all work together on specifications.
 - **Gherkin Syntax Support**: CucumberStudio supports writing tests in Gherkin, a simple human-readable language for defining test cases and requirements.
@@ -27,6 +21,12 @@ CucumberStudio is intended to be used by everyone in a software delivery team: c
 - **Pricing**: CucumberStudio offers different pricing tiers, which can become expensive, especially for smaller teams or startups. The full range of features might be locked behind higher-tier plans.
 - **Dependency on Cucumber Framework**: CucumberStudio is tightly integrated with the Cucumber testing framework, which could limit its use for teams that don't already use or prefer another testing framework.
 - **Cloud-Based Dependency**: Since CucumberStudio is a cloud-based tool, teams may face issues related to internet connectivity, and there could be security concerns related to storing test cases in the cloud.
+
+## Prerequisites
+- Download [Java](https://www.oracle.com/in/java/technologies/downloads/)
+- Download [Eclipse](https://www.eclipse.org/downloads/)
+- Download [Ruby](https://rubyinstaller.org/downloads/archives/) ,  there might be some compatibility issues in my case `2.6.0.1-x64`  works correctly.
+- Set up an account on [CucumberStudio](https://cucumber.io/tools/cucumberstudio).
 
 # How to setup & execute automate run
 Below is a comprehensive guide on how to implement CucumberStudio in your project:
