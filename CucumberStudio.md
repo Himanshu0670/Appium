@@ -145,4 +145,12 @@ Add team members to the project. You can assign them different roles like:
 ---  
 
 ## Pricing 
-As per the pricing details on the [CucumberStudio website](https://smartbear.com/product/cucumberstudio/pricing/), the platform starts at $32 per month for a single user.This plan includes the **`Gherkin editor`, `test automation`, and `advanced living documentation` features such as feature history and digest. Additionally, it provides the ability to manage `3 projects` and includes `2 free read-only users`**. While these features are useful for teams practicing Behavior-Driven Development (BDD), the cost of $32 per month may be considered high, especially for smaller teams or organizations with limited resources. Cnsidering the pricing structure, CucumberStudio may be viewed as costly, especially for smaller teams or companies with budget constraints.
+As per the pricing details on the [CucumberStudio website](https://smartbear.com/product/cucumberstudio/pricing/), the platform starter at $32 per month for a single user.This plan includes:
+- **Gherkin editor**
+- **Test automation**
+- **Advanced living documentation**
+- **Feature history**
+- **3 projects**
+- **2 free read-only users**
+
+While these features are useful for teams practicing Behavior-Driven Development (BDD), the cost of $32 per month may be considered high, especially for smaller teams or organizations with limited resources. Cnsidering the pricing structure, CucumberStudio may be viewed as costly, especially for smaller teams or companies with budget constraints.
