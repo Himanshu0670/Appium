@@ -37,6 +37,8 @@ Below is a comprehensive guide on how to implement CucumberStudio in your projec
 3. Install cucumber plugin
 
 ### Setp 2. **Setting Up CucumberStudio**
+# [Youtube 📺](https://youtu.be/2AJPirJTvVI?si=QJRoWEqGD-YvBZ6M) 
+
 To implement CucumberStudio in your project, follow these steps:
 1. Go to [CucumberStudio](https://cucumber.io/tools/cucumberstudio) and sign up for an account.
 2. If your organization already uses CucumberStudio, request an invite to join the organization.
