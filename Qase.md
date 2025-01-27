@@ -1,6 +1,6 @@
 
 ## [Qase Test Management Tool](https://qase.io/?utm_medium=cpc&utm_source=google&utm_term=qase&utm_campaign=Search_Brand_Beta&hsa_acc=1263669945&hsa_cam=21553353806&hsa_grp=164381836014&hsa_ad=708283550380&hsa_src=g&hsa_tgt=kwd-449732425801&hsa_kw=qase&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA19e8BhCVARIsALpFMgE4hJsD9IG7x91uoSWPMt8phOBLayWBCNL-1OJT8-kh2N2F41PU4REaAkcVEALw_wcB)
-Qase is a modern test management tool designed to help software teams plan, manage, and track their testing efforts. It supports both manual and automated testing, offering an intuitive platform that simplifies test management, improves collaboration, and enhances the overall testing workflow. Qase is suitable for agile teams, quality assurance professionals, and developers, helping them maintain high-quality standards throughout the software development lifecycle.
+Qase is a modern test management tool designed to help software teams plan, manage, and track their testing efforts. It supports both manual and automated testing, offering an intuitive platform that simplifies test management, improves collaboration, and enhances the overall testing workflow. Qase is suitable for agile teams, quality assurance professionals, and developers, helping them maintain high-quality standards throughout the software development lifecycle.Here is the page link link of detailed documentation of [Qase](https://docs.qase.io/).
 
 ### Key Features :-
 
