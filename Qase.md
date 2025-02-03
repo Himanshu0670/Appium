@@ -15,7 +15,7 @@ Qase is a modern test management tool designed to help software teams plan, mana
    
 3. **Collaboration Tools:**
    - Supports team collaboration with features like comments, tagging team members, and attaching files for easy communication.
-   - Integrated with popular collaboration platforms like Slack and Jira, enhancing team interactions.
+   - Integrated with popular collaboration platforms like Jira.
 
 4. **Integration with CI/CD:**
    - Integrates seamlessly with CI/CD tools like GitHub, GitLab, Jenkins, and more.
@@ -29,19 +29,15 @@ Qase is a modern test management tool designed to help software teams plan, mana
    - Tracks test case versions, allowing teams to see changes made over time.
    - Helps teams maintain consistent and up-to-date testing processes as software evolves.
 
-7. **Custom Workflows:**
-   - Flexible workflow management that adapts to different project needs.
-   - Supports agile testing methodologies, allowing teams to adjust testing cycles, prioritize tasks, and improve test coverage based on current project requirements.
-
-8. **Test Automation Support:**
+7. **Test Automation Support:**
    - Qase integrates with popular test automation frameworks and tools like Selenium, Appium, and Cypress.
    - Automated test results can be imported into Qase for centralized reporting.
 
-9. **User-Friendly Interface:**
+8. **User-Friendly Interface:**
    - Intuitive, easy-to-navigate interface with drag-and-drop capabilities for test organization.
    - Provides a simple onboarding process for new users and teams.
 
-10. **Permissions & Role Management:**
+9. **Permissions & Role Management:**
     - Granular access control for teams, allowing administrators to manage permissions based on roles.
     - Enables control over who can create, edit, and execute test cases or view reports.
 
