@@ -76,4 +76,5 @@ The pricing page on Qase.io outlines the different subscription plans available 
    - Additional features like Jira integration, test case versioning, and access to custom workflows.
 
 Their are two more plans named as **Professional Plan & Enterprise Plan** you can read the detailed description on [Pricing](https://qase.io/pricing) page.
-  
+
+## [Company uses Qase](https://theirstack.com/en/technology/qase-io)
