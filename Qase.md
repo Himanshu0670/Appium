@@ -77,4 +77,104 @@ The pricing page on Qase.io outlines the different subscription plans available 
 
 Their are two more plans named as **Professional Plan & Enterprise Plan** you can read the detailed description on [Pricing](https://qase.io/pricing) page.
 
-## [Company uses Qase](https://theirstack.com/en/technology/qase-io)
+### [Company that uses Qase](https://theirstack.com/en/technology/qase-io)
+---
+
+## How to integrate Qase with Cypress to Automate Testcase
+To integrate Qase Reporter in your Cypress setup, follow these steps:
+
+### Step 1: Activate the Cypress App
+- To activate the app, go to the Qase `Apps` section in your workspace, and click on ‘Activate’.
+- Switch to the ‘Access tokens’ tab, and create a new API token. Save the API token as we’ll need it for the next steps.
+
+#### Note: I assuming that cypress is installed on your system. 
+
+### Step2: Add cypress-qase-reporter to your project
+To install and add the reporter as a development dependency, run the following in your node project:
+- `npm install -D cypress-qase-reporter`
+
+### Step3: Add cypress-multi-reporters  as well to your project
+To install and add the reporter as a development dependency, run the following in your node project:
+- `npm install cypress-multi-reporters`
+
+### Step4: Add API token & Test case ID
+At the very least, copy paste the mention code to `cypress.config.js`  file, & reporter will need two variables defined - your Cypress App’s Token, and the Qase Project you want to publish the results to.
+
+```
+const cypress = require('cypress');
+const qasePlugin = require('cypress-qase-reporter/plugin');
+const qaseMetadata = require('cypress-qase-reporter/metadata');
+
+module.exports = {
+    reporter: 'cypress-multi-reporters',
+    reporterOptions: {
+        reporterEnabled: 'cypress-qase-reporter',
+        cypressQaseReporterReporterOptions: {
+            mode: "testops",
+            debug: true,
+            testops: {
+                api: {
+                    token: '<app-token>',  // Replace with your Cypress app token
+                },
+                project: '<prj-code>',  // Replace with your Qase project code
+                uploadAttachments: true,
+                run: {
+                    complete: true,
+                },
+            },
+            framework: {
+                cypress: {
+                    screenshotsFolder: 'cypress/screenshots',
+                }
+            }
+        },
+    },
+    video: false,
+    e2e: {
+        setupNodeEvents(on, config) {
+            qasePlugin(on, config);
+            qaseMetadata(on);
+        },
+    },
+};
+```
+
+### Step5: Write Test case & cypress script 
+Add test cases to Qase app & write cypress script, here is a demo script: 
+
+```
+describe('Automationteststore', () => {
+  beforeEach(() => {
+    cy.visit('https://automationteststore.com/');
+  });
+
+  // Note - Write exactly same title name of Testcase in it().
+    it('Visit to the web application', () => {
+      cy.log('CIWQ-1'); //Write exactly same Test case ID/      
+      cy.url().should('include', '.com'); 
+    });
+
+    it('Select Men section', () => {
+ //Test ID 2
+      cy.log('CIWQ-3');
+      cy.get('[href="https://automationteststore.com/index.php?rt=product/category&path=58"]').click();
+      cy.get('.breadcrumb').should('contain.text','	    	Men	    ');
+    });
+
+    it('Select Skincare category', () => {
+//Test ID 3      
+      cy.log('CIWQ-4');
+      cy.get('[href="https://automationteststore.com/index.php?rt=product/category&path=58"]').click();
+      cy.get('.mt10.align_center').eq(3).should('contain.text','Skincare').click()
+
+    });
+
+});
+````
+
+### Step6: Execute cypress script 
+To run only a specific script from terminal run
+- `npx cypress run --spec "cypress/integration/myTest.spec.js"`
+
+To run all scripts from terminal run
+-  `npx cypress run`
